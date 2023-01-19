@@ -1,59 +1,629 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  background-color: white;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
-  transition: 0.3s;
-  width: 50%;
-  min-width: 300px;
-  border-radius: 15px;
+    <title>Vegalum</title>
 
-  position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    <!-- ==== Document Meta ==== -->
+    <meta name="author" content="Luis Enrique Vega Santiago">
+    <meta name="description"
+        content="Somos lideres en el mercado fabricando todo tipo de puertas, ventanas, portones de aluminio, ademas tenemos servicios en instalacion de paneles solares">
+    <meta name="keywords"
+        content="Aluminio, Paneles Solares, Puertas, Ventanas, Portones, Cristal Templado, Cristal Curvo, Vitrales, Barandales">
+    <meta name="copyright" content="Grupo Vegalum">
+    <meta name="robots" content="index" />
 
-  background-color: rgb(6, 6, 151);
-}
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+    <!-- ======= ELIMINAR ======== -->
+    <meta http-equiv="cache-control" content="no-cache" />
 
-img {
-  border-radius: 5px 5px 0 0;
-}
 
-.container {
-  padding: 1px 16px;
-}
-h4{
-  font-size: 35px;
-  padding: 0px;
-  margin: 0;
-}
-</style>
+    <!-- Favicons -->
+    <link href="assets/img/VegalumCity.svg" rel="icon">
+    <link href="assets/img/VegalumCity.svg" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/card.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Arsha - v4.6.0
+  * Author: BootstrapMade.com & Erick Flores
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
 
-<div class="card">
-  <img src="img/construccion.png" alt="Sitio en construccion" style="width:100%">
-  <div class="container">
-    <h4><b>¡Lo sentimos!</b></h4> 
-    <p>Esta página se encuentra en construcción. Por favor, vuelve más tarde.</p> 
-  </div>
-</div>
+<body>
+    <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "500276329992703");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center" id="#home">
+
+            <h1 class="logo me-auto"><a href="">Vegalum</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar align-items-center">
+                <ul class="text-center">
+                    <li><a class="nav-link scrollto nav-btn" href="#hero">Inicio</a></li>
+                    <li><a class="nav-link scrollto nav-btn" href="#services">Servicios</a></li>
+                    <li><a class="nav-link scrollto nav-btn" href="#album">Album</a></li>
+                    <li><a class="nav-link scrollto nav-btn" href="#about">Acerca de</a></li>
+                    <li><a class="nav-link scrollto nav-btn" href="#contact">Contacto</a></li>
+                    <li><a class="getstarted scrollto" href="#about">Cotizar</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+            <!-- .navbar -->
+
+        </div>
+    </header>
+
+
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="container-fluid d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h1>Grupo Vegalum</h1>
+                    <h2><em>"Pasion que construye tus sueños"</em></h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="" class="btn-get-started scrollto">Cotizar Ahora</a>
+                        <a href="" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Ver
+                                Video</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= Cliens Section ======= -->
+        <section id="cliens" class="cliens section-bg">
+            <div class="container">
+
+                <div class="row d-flex align-items-center justify-content-center" data-aos="zoom-in">
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/grupos/grupo-1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/grupos/grupo-2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/grupos/grupo-3.png" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Cliens Section -->
+
+        <!-- ======= Servicios Section ======= -->
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Servicios</h2>
+                    <p>En <strong>Vegalum </strong> tenemos una gran variedad de servicios por ello nos hemos dividimos
+                        en 3 grupos para ofrecerle una mejor experiencia </p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="row">
+                        <div class="card-deck mb-3 text-center d-flex justify-content-center">
+                            <div class="col-sm-12 col-md-6 col-lg-4  d-flex align-items-stretch" data-aos="zoom-in"
+                                data-aos-delay="100">
+
+                                <div class="card mb-2 shadow-card icon-box">
+                                    <div
+                                        class="card-header d-flex align-items-center justify-content-center h-100 bg-white">
+                                        <!-- <h4 class="my-0 font-weight-normal flex-grow-1"></h4> -->
+                                        <img class="card-img-top p-6 " src="./img/Asset 4.png" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vegalum Solar</h5>
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li>Deja de pagar tanto en CFE y mejor instala paneles solares y asi hacer deducir tus recibos </li>
+                                            <li></li>
+                                            <li><em></em></li>
+                                        </ul>
+                                        <form action="pagina.php" method="POST" class="col-12">
+                                            <input type="hidden" name="grupo" value="Grupo">
+                                            <!-- <input type="submit" name="btngrupo" value="Ir al sitio" class="btn btn-warning col-12"> -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4  d-flex align-items-stretch" data-aos="zoom-in"
+                                data-aos-delay="100">
+
+                                <div class="card mb-2 shadow-card icon-box">
+                                    <div
+                                        class="card-header d-flex align-items-center justify-content-center h-100 bg-white">
+                                        <!-- <h4 class="my-0 font-weight-normal flex-grow-1"></h4> -->
+                                        <img class="card-img-top p-6 " src="./img/Servicios Vegalum.png"
+                                            alt="Card image cap">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Servicios Vegalum</h5>
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li>Trabajos de Aluminio(Puertas, Ventantas y Portones) </li>
+                                            <li> _________________</li>
+                                            <li><em>Pasion que construye tus sueños</em></li>
+                                        </ul>
+                                        <form action="pagina.php" method="POST" class="col-12">
+                                            <input type="hidden" name="grupo" value="Grupo">
+                                            <!-- <input type="submit" name="btngrupo" value="Ir al sitio" class="btn btn-warning col-12"> -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4  d-flex align-items-stretch" data-aos="zoom-in"
+                                data-aos-delay="100">
+
+                                <div class="card mb-2 shadow-card icon-box">
+                                    <div
+                                        class="card-header d-flex align-items-center justify-content-center h-100 bg-white">
+                                        <!-- <h4 class="my-0 font-weight-normal flex-grow-1"></h4> -->
+                                        <img class="card-img-top p-6 " src="./img/CURVOGLASS.png" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Curvoglass</h5>
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li>Curvamos todo tipo de cristales para tus necesidades</li>
+                                            <li></li>
+                                            <li><em></em></li>
+                                        </ul>
+                                        <form action="pagina.php" method="POST" class="col-12">
+                                            <input type="hidden" name="grupo" value="Grupo">
+                                            <!-- <input type="submit" name="btngrupo" value="Ir al sitio" class="btn btn-warning col-12"> -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Servicios Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="album" class="portfolio">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Nuestros ultimos proyectos</h2>
+                    <p>Le mostramos nuestros proyectos mas recientes.</p>
+
+                    <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <li data-filter="*" class="filter-active">Todo</li>
+                        <li data-filter=".filtro-panel">Paneles Solares</li>
+                        <li data-filter=".filtro-puerta">Puertas</li>
+                        <li data-filter=".filtro-porton">Portones</li>
+                        <li data-filter=".filtro-ventana">Ventanas</li>
+                        <li data-filter=".filtro-barandales">Barandales</li>
+                    </ul>
+                </div>
+
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filtro-panel">
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Paneles/panel-1.jpg" class="img-fluid"
+                                alt=""></div>
+                        <div class="portfolio-info">
+                            <h4>Paneles Solares</h4>
+                            <p>450W</p>
+                            <a href="assets/img/portfolio/Paneles/panel-1.jpg" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox preview-link" title="Panel Solar de 450W"><i
+                                    class='bx bx-expand'></i></a>
+                            <a href="portfolio.php" class="details-link" title="More Details"><i
+                                    class='bx bx-news'></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filtro-puerta">
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Puertas/puerta-1.jpg"
+                                class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            <h4>Puerta Aluminio</h4>
+                            <p>Acabado Champagne Mate</p>
+                            <a href="assets/img/portfolio/Puertas/puerta-1.jpg" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox preview-link" title=""><i class='bx bx-expand'></i></a>
+                            <a href="" class="details-link" title="More Details"><i class='bx bx-news'></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filtro-porton">
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Portones/porton-1.jpg"
+                                class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            <h4>Porton Aluminio</h4>
+                            <p>Acabado Natural Mate</p>
+                            <a href="assets/img/portfolio/Portones/porton-1.jpg" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox preview-link" title=""><i class='bx bx-expand'></i></a>
+                            <a href="" class="details-link" title="More Details"><i class='bx bx-news'></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filtro-ventana">
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Ventana/ventana-1.jpg"
+                                class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            <h4>Ventana Aluminio</h4>
+                            <p>Acabado Natural Brillante</p>
+                            <a href="assets/img/portfolio/Ventana/ventana-1.jpg" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox preview-link" title=""><i class='bx bx-expand'></i></a>
+                            <a href="" class="details-link" title="More Details"><i class='bx bx-news'></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filtro-ventana">
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Ventana/ventana-2.jpg"
+                                class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            <h4>Ventana Aluminio</h4>
+                            <p>Acabado Blanco</p>
+                            <a href="assets/img/portfolio/Ventana/ventana-2.jpg" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox preview-link" title=""><i class='bx bx-expand'></i></a>
+                            <a href="" class="details-link" title="More Details"><i class='bx bx-news'></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filtro-barandales">
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Barandales/barandal-1.jpg"
+                                class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            <h4>Barandal Cristal</h4>
+                            <p>Acabado Blanco</p>
+                            <a href="assets/img/portfolio/Barandales/barandal-1.jpg" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox preview-link" title=""><i class='bx bx-expand'></i></a>
+                            <a href="" class="details-link" title="More Details"><i class='bx bx-news'></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filtro-barandales">
+                        <div class="portfolio-img"><img src="assets/img/portfolio/Barandales/barandal-2.jpg"
+                                class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            <h4>Barandal de cristal y acero inox</h4>
+                            <p>Acabado Blanco</p>
+                            <a href="assets/img/portfolio/Barandales/barandal-2.jpg" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox preview-link" title=""><i class='bx bx-expand'></i></a>
+                            <a href="" class="details-link" title="More Details"><i class='bx bx-news'></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======= Preguntas Frecuentes Section ======= -->
+        <section id="faq" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Preguntas Frecuentes</h2>
+                    <p>Algunas de las preguntas que mas nos hacen los clientes.</p>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-1" class="">pregunta<i
+                                    class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse 1" data-bs-parent=".faq-list">
+                                <p>respuesta</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Preguntas Frecuentes Section -->
+
+        <!-- ======= Sobre Nosotros Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Sobre nosotros</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row text-center">
+                            <b>MISIÓN</b>
+                        </div>
+                        <div class="row">
+                            <br>
+                            <p class="text-justify">Ser una empresa formalmente responsable con innovaciones
+                                tecnológicas para satisfacer las necesidades de nuestros clientes en productos de
+                                diferente gama para la construcción, desde energía renovable que ayudan a reducir la
+                                huella de carbono en nuestro medio ambiental, hasta proyectos arquitectónicos con un
+                                nivel avanzado de ingeniería aplicada.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row text-center">
+                            <b>VISIÓN</b>
+                        </div>
+                        <div class="row">
+                            <br>
+                            <p class="text-justify">Ser líderes especialistas en diseño, instalación y monitoreo de
+                                sistemas fotovoltaicos, resolución de acabados en obras residenciales e industriales,
+                                utilizando tecnología de punta para superar las expectativas de los clientes en calidad
+                                y servicio.</p>
+                        </div>
+                        <!-- <a href="#" class="btn-learn-more">Conozca mas</a> -->
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- End Sobre Nosotros Section -->
+
+        <!-- ======= Contacto Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>CONTACTO</h2>
+                    <p>Tambien puedes visitarnos en nustras sucursales. Elije la mas cercana y con gusto te atenderemos.
+                    </p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-5 d-flex align-items-stretch">
+                        <div class="info">
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Telefonos:</h4>
+                                <p><a href="tel:921 156 0588" class="text-primary">921 156 0588</a> / <a
+                                        href="tel:921 172 6709" class="text-primary">921 172 6709</a></p>
+                            </div>
+
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Correo:</h4>
+                                <p>serviciosvegalum@hotmail.com</p>
+                            </div>
+
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Ubicacion:</h4>
+                                <br><!--
+                                <div class="sucursal">
+                                    <strong>Sucursal Palmitas</strong>
+                                    <p>Av. Universidad 1907-A, Emiliano Zapata, Coatzacoalcos, Ver. 96560</p>
+                                </div>
+                                <div class="sucursal">
+                                    <strong>Sucursal Juan Osorio</strong>
+                                    <p>Av. Juan Osorio López 236, Nueva Obrera, Coatzacoalcos, Ver.96598</p>
+                                </div>-->
+                                <div class="sucursal">
+                                    <strong>Sucursal Ochoa</strong>
+                                    <p>Av. Nuño de Balboa 212, Rafael Hernandez Ochoa, Coatzacoalcos, Ver. 96550</p>
+                                </div>
+                            </div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d281.80551960418296!2d-94.46980311503539!3d18.14049685223354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85e9839fdd462837%3A0x4f38a72c51c4d58e!2sSERVICIOS%20VEGALUM%20%22PANELES%20SOLARES%2C%20CRISTAL%20Y%20ALUMINIOS%2C%20CRISTAL%20TEMPLADO!5e0!3m2!1ses-419!2smx!4v1674160736676!5m2!1ses-419!2smx"
+                                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form action="forms/contacto.php" method="POST" role="form" class="php-email-form">
+                            <h4>Tambien puede enviarnos un correo</h4>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" name="nombre" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="name">Correo</label>
+                                    <input type="email" class="form-control" name="correo" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Asunto</label>
+                                <input type="text" class="form-control" name="asunto" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Mensaje</label>
+                                <textarea class="form-control" name="mensaje" rows="10" required></textarea>
+                            </div>
+                            <div class="text-center"><button type="submit" name="e_correo">Enviar Mensaje</button></div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Contacto Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h4>Boletin informativo</h4>
+                        <p>Suscribete a nuestro newsletter para estar enterado de las noticias y promociones.<br> ¡Le
+                            enviaremos a su correo electrónico actualizaciones de productos, noticias sobre Paneles
+                            Solares e incluso consejos de nuestros expertos! <br><br> Debido
+                            a que respetamos su privacidad, únicamente deseamos enviarle contenido relevante para usted.
+                        </p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribir">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Vegalum</h3>
+                        <p>
+                            Av. Universidad 1907-A <br> Coatzacoalcos, Ver. 96560<br> Mexico <br><br>
+                            <strong>Telefono:</strong> 9211726709<br>
+                            <strong>Correo:</strong> contacto@vegalum.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Enlaces</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Sobre nosotros</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terminos y condiciones</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Politica de privacidad</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Nuestros servicios</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Sistemas fotovoltaicos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios de aluminio</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Cristales</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Nuestras Redes Sociales</h4>
+                        <p></p>
+                        <div class="social-links mt-3">
+                            <a href="" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                <img src="assets/img/logo.png" alt="Logo Vegalum" width="250">
+            </div>
+            <div class="credits">
+                &copy; Copyright <strong><span>Vegalum</span></strong>. Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- <div id="preloader"></div> -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
-</html> 
+
+</html>
