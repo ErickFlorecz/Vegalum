@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  transition: 0.3s;
+  width: 50%;
+  min-width: 300px;
+  border-radius: 15px;
+
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+  background-color: rgb(6, 6, 151);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 1px 16px;
+}
+h4{
+  font-size: 35px;
+  padding: 0px;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="img/construccion.png" alt="Sitio en construccion" style="width:100%">
+  <div class="container">
+    <h4><b>¡Lo sentimos!</b></h4> 
+    <p>Esta página se encuentra en construcción. Por favor, vuelve más tarde.</p> 
+  </div>
+</div>
+
+</body>
+</html> 
